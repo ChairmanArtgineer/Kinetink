@@ -55,7 +55,7 @@ class add_KinetinkLib(bpy.types.Operator):
         kinetinkPath = str(selfDir /"assets"/"kinetikink assets.blend")
         print(f"path_to_file -> {kinetinkPath}")
         
-        add_assLib("kinetink test", kinetinkPath, 'LINK')
+        add_assLib("Kinetink", kinetinkPath, 'LINK')
         return {'FINISHED'}           
         
 class remove_KinetinkLib(bpy.types.Operator):
@@ -64,7 +64,7 @@ class remove_KinetinkLib(bpy.types.Operator):
     bl_label = "remove kientink library"
     
     def execute(self, context):
-        remove_assLib("kinetink test")
+        remove_assLib("Kinetink")
         return {'FINISHED'}
     
 
